@@ -15,6 +15,18 @@ const StyledBlurhash = styled(Blurhash)`
   position: absolute !important;
   top: 0;
   left: 0;
+  animation: pulse 1.5s infinite;
+  @keyframes pulse {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
 `;
 
 interface IOptimizedImageProps {
